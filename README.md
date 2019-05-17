@@ -1,4 +1,4 @@
-# winemap-data-loader
+# population-data-loader
 Creates a postgresql container on OpenShift and then loads wine review data from a data loader image as a kubernetes [job](http://kubernetesbyexample.com/jobs/)
 
 
@@ -15,7 +15,7 @@ oc new-app --template=postgresql-persistent \
 ```
 
 ```sh
-oc create -f https://raw.githubusercontent.com/radanalyticsio/winemap-data-loader/master/wine-data-loader.yaml
+oc create -f https://github.com/pshakari/population-data-loader/blob/master/population-data-loader.yaml
 
 oc new-app --template=population-data-loader
 ```
